@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RHODE POP UP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="head_text"> 
+        <h3>LONDON - 17 TO 20 OCTOBER - RHODE POP UP</h3>
+    </header>
+    <header class="header">
+        <div class="head__img">
+            <img src="img/logo2.png" width="300px" alt="logo2">
+        </div>
+        <ul class="menu">
+            <li class="menulink"><a href="index.html">HOME</a></li>
+            <li class="menulink"><a href="pop-up.html">POP-UP</a></li>
+            <li class="menulink"><a href="#event">EVENT</a></li>
+            <li class="menulink"><a href="#entradas">TICKETS</a></li>
+        </ul>
+        <div class="burger">
+            <img src="img/MENU.png" width="15%">
+        </div>
+    </header>
+
+    <section class="welcome">
+        <div class="welcome-text">
+            <h2>WELCOME TO THE RHODE POP-UP</h2>
+            <h4>17 to 20 October 2024 in London.</h4>
+            <a class="cta-button" id="openModal">POP-UP INFO</a>
+            <div id="modalWindow" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>LONDON POP UP</h2>
+                    <h4><b>When:</b> Open October 17th to 20th, from 11am to 7pm daily</h4>
+                    <h4><b>Where:</b> 6-7 Motcomb St, London SW1X 8JU, UK</h4>
+                </div>
+            </div>
+        </div>
+        <img src="img/1.jpeg" alt="Festival Image" class="welcome-image">
+    </section>
+
+    <section class="gallery">
+        <section>
+            <br>
+            <h2>GALLERY</h2>
+        </section>
+        <div class="gallery__grid1">
+            <img src="img/grid1.jpeg" alt="1"> 
+            <img src="img/grid2.png" alt="2"> 
+            <img src="img/grid3.png" alt="3"> 
+            <img src="img/grid4.jpeg" alt="4"> 
+            <img src="img/grid5.jpg" alt="5"> 
+            <img src="img/grid6.jpg" alt="6">
+        </div>
+        <section id="event">
+            <h2>EVENT</h2>
+        </section>
+        <div class="gallery__grid2">
+            <img src="img/5.jpg" alt="1"> 
+            <img src="img/6.jpg" alt="2"> 
+            <img src="img/7.jpg" alt="3"> 
+            <img src="img/8.jpg" alt="4">
+        </div>
+        <br>
+    </section>
+
+    <section id="entradas" class="entradas">
+      <h2>GET YOUR TICKETS</h2>
+      <div class="container">
+          <form id="entradasForm" onsubmit="return validateForm()" class="tickets-form" name="entradasForm">
+              <div class="form-group">
+                  <label for="nombre">Name:</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Enter your name" required>
+                  <span id="nombreCheck" class="check-icon"></span>
+              </div>
+              <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  <span id="emailCheck" class="check-icon"></span>
+              </div>
+              <div class="form-group">
+                  <label for="cantidad">Number of Tickets:</label>
+                  <input type="number" id="cantidad" name="cantidad" placeholder="0" min="0" max="5" required>
+                  <span id="cantidadCheck" class="check-icon"></span>
+              </div>
+              <button type="submit" class="cta-button">Get Tickets</button>
+          </form>
+      </div>
+  </section>
+  
+  
+
+    <footer>
+        <div id="footImg">
+            <img src="img/logo2.png" width="98%" alt="logo2">
+        </div>
+        <section class="location-section">
+            <div class="location-content">
+                <h3>RHODE LONDON POP UP</h3>
+                <p>6-7 Motcomb St, London SW1X 8JU, UK</p>
+                <a href="https://www.instagram.com/rhode/"><img src="img/instagram.png" width="32px"></a>
+                <a href="https://www.tiktok.com/@rhode?is_from_webapp=1&sender_device=pc"><img src="img/tik-tok.png" width="32px"></a>
+            </div>
+            <div class="location-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.7526998249814!2d-0.15890322337756105!3d51.499405511287335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876053b89fc15e9%3A0x7a8cbaf7bd6149cb!2s6-7%20Motcomb%20St%2C%20London%20SW1X%208JU%2C%20Reino%20Unido!5e0!3m2!1ses!2ses!4v1729117194111!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="footText">
+            <p>&copy;2024 RHODE Festival</p>
+        </section>
+    </footer>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

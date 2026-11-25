@@ -1,0 +1,560 @@
+/* Variables globales */
+:root {
+	--primary-color: #f2f2f2;
+	--accent-color: #ADAEB0;
+	--text-color: #ADAEB0;
+	--background-color: #F1F0ED;
+	--button-hover-color: #4f4f4f;
+}
+
+/* Reset y estilos básicos */
+* {
+	margin: 1rem;
+	padding: 0;
+	box-sizing: border-box;
+	justify-content: center;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	background-color: var(--background-color);
+	color: var(--text-color);
+	line-height: 1.6;
+}
+
+.container {
+	width: 85%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Header y Menú */
+.head_text {
+	background-color: white;
+	color: var(--accent-color);
+	border-radius: 3rem;
+	text-align: center;
+	justify-content: center;
+}
+
+.head__img {
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+}
+
+.header {
+	background-color: white;
+	padding: 1rem 0;
+	border-bottom: 1px solid var(--primary-color);
+	text-align: center;
+	border-radius: 3rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 1.6rem;
+    background-color: var(--accent-color);
+    border-radius: 3rem;
+    margin: 0 auto; 
+    width: 90%; 
+    max-width: 1200px; 
+}
+
+
+.menulink a {
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+}
+
+.menulink:hover a {
+	color: var(--button-hover-color);
+}
+
+/* Icono hamburguesa */
+.burger {
+	cursor: pointer;
+	display: none;
+	font-size: 2rem;
+	color: var(--accent-color);
+}
+
+/* Hero Section */
+.welcome {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 4rem 0;
+	background-color: white;
+	border-radius: 3rem;
+}
+
+.welcome-text {
+	max-width: 80%;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.welcome-text p {
+	max-width: 80%;
+	font-size: 2rem;
+	font-weight: 700;
+	text-align: left;
+	color: #66645F;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+	color: #66645F;
+	text-align: center;
+}
+
+h4{
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+	color: var(--accent-color);
+	text-align: center;
+	font-weight: 200;
+}
+
+h5{
+	font-size: 0.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--accent-color);
+	text-align: left;
+	font-weight: 200;
+}
+
+.welcome-image {
+	width: 50%;
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+.programTitle{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 3rem;
+	flex-direction: column;
+}
+
+/* Ventana modal */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-content {
+	background-color: white;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid var(--accent-color);
+	max-width: 600px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.close {
+	color: var(--accent-color);
+	font-size: 28px;
+	font-weight: bold;
+	float: right;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.close:hover {
+	color: var(--button-hover-color);
+}
+.modal_Tickets {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+}
+
+/* Estilos para la ventana modal */
+.modal_Tickets {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Sección de Galería */
+.gallery {
+	background-color: white;
+	border-radius: 3rem;
+	height: fit-content;
+}
+
+.gallery__grid1 {
+	width: 100%;
+	height: fit-content;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 1rem;
+	margin: auto;
+}
+
+.gallery__grid1 img {
+	width: 90%;
+	height: 90%;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+.gallery__grid2 {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	gap: 1rem;
+	margin: auto;
+}
+
+.gallery__grid2 img {
+	width: 90%;
+	height: 90%;
+	border-radius: 8px;
+	object-fit: cover;
+}
+
+/* Videos en la galería */
+.gallery_Video {
+	background-color: white;
+	border-radius: 3rem;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin: 2rem auto;
+}
+
+.gallery__Video {
+	width: 90%;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 1rem;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+/* Sección de Entradas */
+.entradas {
+	background-color: white;
+	border-radius: 3rem;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.tickets-form {
+	background-color: var(--background-color);
+	padding: 2rem 3rem;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+label {
+	display: block;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--accent-color);
+	margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+	width: 100%;
+	padding: 0.75rem 1rem;
+	font-size: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+	border-color: var(--accent-color);
+	box-shadow: 0 0 5px rgba(102, 100, 95, 0.5);
+	outline: none;
+}
+
+.cta-button {
+	background-color: var(--accent-color);
+	color: white;
+	padding: 1rem 2rem;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 100%;
+	border: none;
+	font-size: 1.2rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #4e4a46;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;  /* Alinea el input y el check verticalmente */
+    justify-content: space-between; /* Espacia el input y el check */
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    flex: 1; /* El input ocupará la mayor parte del espacio */
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.check-icon {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    visibility: hidden; /* Inicialmente oculto */
+    color: green;
+    margin-right: 1rem; /* Añade un margen a la derecha para espaciado */
+}
+
+.check-icon.visible {
+    visibility: visible;
+}
+
+
+/* Sección de Ubicación */
+.location-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.location-content {
+	flex: 1;
+	padding-right: 2rem;
+}
+
+.location-content h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+	color: var(--accent-color);
+}
+
+.location-content p {
+	font-size: 1rem;
+	color: var(--accent-color);
+}
+
+.location-map {
+	flex: 1;
+	max-width: 600px;
+}
+
+.location-map iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/* Footer */
+footer {
+	background-color: white;
+	color: var(--text-color);
+	text-align: center;
+	padding: 2rem 0;
+	border-top: 1px solid var(--primary-color);
+	font-size: 0.9rem;
+	border-radius: 3rem;
+}
+
+.footText {
+	background-color: var(--accent-color);
+	border-radius: 3rem;
+	color: white;
+	display: flex;
+	justify-content: center;
+	font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+	.welcome {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.welcome-image {
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.welcome-text {
+		max-width: 100%;
+	}
+
+	.burger {
+		display: block;
+		color: var(--accent-color);
+	}
+
+	.menu {
+		margin: 0;
+		background: var(--accent-color);
+		position: fixed;
+		right: -100%;
+		top: 70px;
+		width: 100%;
+		height: calc(100% - 70px);
+		flex-direction: column;
+		justify-content: space-around;
+		z-index: 1;
+		transition: all 0.33s;
+	}
+
+	.menulink {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	.menu-show {
+		right: 0;
+	}
+
+	.gallery__grid1 {
+		grid-template-columns: auto auto;
+	}
+
+	.gallery__grid2 {
+		grid-template-columns: auto auto;
+	}
+	.gallery__Video{
+		grid-template-columns: auto ;
+	}
+	.form-group {
+        flex-direction: column; /* Pone el icono debajo del input */
+        align-items: flex-start; /* Alinea el input e icono a la izquierda */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%; /* Asegura que los inputs ocupen todo el ancho disponible */
+    }
+
+    .check-icon {
+        margin-left: 0; /* Elimina margen izquierdo en pantallas pequeñas */
+        margin-top: 0.5rem; /* Añade un margen superior para separar del input */
+        align-self: flex-end; /* Alinea el check a la derecha en pantallas pequeñas */
+    }
+
+	.location-section {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.location-map iframe {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 478px) {
+	.menu {
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.gallery__grid1 {
+		grid-template-columns: auto;
+	}
+
+	.gallery__grid2 {
+		grid-template-columns: auto;
+	}
+
+	.welcome-text h2 {
+		font-size: 2.2rem;
+	}
+
+	.welcome-image {
+		width: 100%;
+	}
+
+	.tickets-title {
+		font-size: 1.8rem;
+	}
+
+	.form-group {
+        flex-direction: column; /* Mantén el icono debajo en móviles */
+        align-items: flex-start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%; /* Mantén los inputs a 100% en móviles */
+        font-size: 1rem; /* Ajuste de tamaño del texto */
+    }
+
+    .check-icon {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        font-size: 1.2rem; /* Ajusta el tamaño del icono para pantallas más pequeñas */
+        align-self: flex-end; /* Alinea el icono a la derecha */
+    }
+	.location-section {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.location-map iframe {
+		height: 250px;
+	}
+}
